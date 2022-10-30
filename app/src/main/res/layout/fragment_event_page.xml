@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                android:elevation="0dp"
+                app:cardElevation="0dp">
+
+            <ImageView
+                    android:id="@+id/eventImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/event_01"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+                android:id="@+id/eventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Africa Cup of Nations"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/eventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Date: Jan 9 - Feb 6"
+                android:textColor="@color/dark"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/eventText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:lineSpacingExtra="5sp"
+                android:text="The Africa Cup of Nations, also known as the AFCON, officially CAN (French for Coupe d’Afrique des Nations), is the main international association football (soccer) competition in Africa. The event is sanctioned by the Confederation of African Football, or CAF.
+
+The Africa Cup of Nations tournament was first held in 1957. It has been held every two years since 1968. From 2013, the African Cup was switched to odd number years so it will not clash with the FIFA World Cup.
+
+At the first tournament in 1957, there were only three participating countries: Sudan, Ethiopia and Egypt. South Africa was supposed to compete but were disqualified due to apartheid policies of their government. The first tournament was won by Egypt.
+
+In 1992, the final tournament participants were expanded to 12. Teams were divided into four groups of three, with the top two teams going to the quarter-finals.
+
+In 1996, South Africa hosted the 20th Africa Cup of Nations after their long ban was lifted due to their country’s apartheid. Participants were expanded to 16, into four groups.
+                "/>
+
+    </LinearLayout>
+</ScrollView>
